@@ -6,11 +6,11 @@ const Counter = () => {
   const counter = useSelector((state) => state.counter);
 
   const incrementHandler = () => {
-    dispatch({ type: "incrementby5" });
+    dispatch({ type: "increase", value: 5 });
   };
 
   const decrementHandler = () => {
-    dispatch({ type: "decrementby5" });
+    dispatch({ type: "decrease", value: 5 });
   };
 
   const toggleCounterHandler = () => {};
